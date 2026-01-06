@@ -7,4 +7,4 @@ stores them in a database, and visualizes spending patterns.
 ## Team Members
 - Nkem Jeferson Achia
 - Muhammed Awwal Achuja
-- Eelaf Adam
+-
