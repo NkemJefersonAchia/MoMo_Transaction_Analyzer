@@ -15,4 +15,4 @@ Link: https://trello.com/invite/b/6962aee2b234ced12549c24c/ATTIf1d0632ffd45321b8
 
 ##Link to our Miro Diagram
  
-Link:https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
+Link: https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
