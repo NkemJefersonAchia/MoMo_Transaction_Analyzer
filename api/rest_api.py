@@ -31,4 +31,8 @@ class APIHandler(BaseHTTPRequestHandler):
             if txn:
                 self.send_response(200)
                 self.end_headers()
+                self.wfile.write(json.dumps(txn).encode())
+            else:
+                self.send_response(404)
+                self.end_headers()
             
