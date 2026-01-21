@@ -24,3 +24,11 @@ class APIHandler(BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps(transactions).encode)
+        elif self.path.startswith('/transaction/'):
+            txn_id = int(self.path.split('/')[-1])
+            
+            txn=next((t for t in transactions if t['id']==txn_id), None)
+            if txn:
+                self.send_response(200)
+                self.end_headers()
+            
