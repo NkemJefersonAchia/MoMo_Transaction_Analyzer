@@ -42,10 +42,11 @@ class APIHandler(BaseHTTPRequestHandler):
             return False
 
     def do_GET(self):
-       
         if not self.check_login():
             self.send_response(401)
+            self.send_header('WWW-Authenticate', 'Basic realm="MoMo API"')
             self.end_headers()
+            self.wfile.write(b'{"error": "Authentication Required"}')
             return
 
         # GET /transactions 
