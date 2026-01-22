@@ -92,3 +92,6 @@ class APIHandler(BaseHTTPRequestHandler):
         else:
             self.send_response(404)
             self.end_headers()
+if __name__ == '__main__':
+    server = HTTPServer(('localhost', 8000), APIHandler)
+    
