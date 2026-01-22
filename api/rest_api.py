@@ -51,4 +51,24 @@ class APIHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(json.dumps(new_data).encode())
         
-    
+    def do_PUT(self):
+        if not self.check_login():
+            self.send_response(401)
+            self.end_headers()
+            return
+
+        txn_id = int(self.path.split('/')[-1])
+        content_length = int(self.headers['Content-Length'])
+        body = self.rfile.read(content_length)
+        updated_data = json.loads(body)
+
+        for txn in transactions:
+            if txn['id'] == txn_id:
+                txn.update(updated_data)
+                self.send_response(200)
+                self.end_headers()
+                self.wfile.write(json.dumps(txn).encode())
+                return
+        
+        self.send_response(404)
+        self.end_headers()
