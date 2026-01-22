@@ -94,4 +94,5 @@ class APIHandler(BaseHTTPRequestHandler):
             self.end_headers()
 if __name__ == '__main__':
     server = HTTPServer(('localhost', 8000), APIHandler)
-    
+    print(" The server is running on http://localhost:8000")
+    server.serve_forever()
