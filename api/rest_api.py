@@ -72,3 +72,23 @@ class APIHandler(BaseHTTPRequestHandler):
         
         self.send_response(404)
         self.end_headers()
+        
+    def do_DELETE(self):
+        if not self.check_login():
+            self.send_response(401)
+            self.end_headers()
+            return
+
+        txn_id = int(self.path.split('/')[-1])
+        global transactions
+        # We filter the list to keep everything EXCEPT the ID we want to delete
+        initial_len = len(transactions)
+        transactions = [t for t in transactions if t['id'] != txn_id]
+        
+        if len(transactions) < initial_len:
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(json.dumps({"message": "Deleted"}).encode())
+        else:
+            self.send_response(404)
+            self.end_headers()
