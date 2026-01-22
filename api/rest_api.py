@@ -46,3 +46,9 @@ class APIHandler(BaseHTTPRequestHandler):
         new_data = json.loads(body)
         new_data['id'] = len(transactions) + 1
         transactions.append(new_data)
+        
+        self.send_response(201)
+        self.end_headers()
+        self.wfile.write(json.dumps(new_data).encode())
+        
+    
