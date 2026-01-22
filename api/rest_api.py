@@ -13,7 +13,7 @@ class APIHandler(BaseHTTPRequestHandler):
         encoder = authentication_header.split('')[1]
         decoder = base64.b64decode(encoder).decode('utf-8')
         return decoder == "team5:ALU2025"
-    def do_get(self):
+    def do_GET(self):
         if not self.check_login():
             self.send_response(401)
             self.end_headers()
@@ -36,3 +36,13 @@ class APIHandler(BaseHTTPRequestHandler):
                 self.send_response(404)
                 self.end_headers()
             
+    def do_POST(self):
+        if not self.check_login():
+            self.send_response(401)
+            self.end_headers()
+            return
+        content_length = int(self.headers['Content-Length'])
+        body = self.efile.read(content_length)
+        new_data = json.loads(body)
+        new_data['id'] = len(transactions) + 1
+        transactions.append(new_data)
