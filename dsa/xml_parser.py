@@ -43,3 +43,4 @@ def parse_sms_xml():
 
 if __name__ == "__main__":
     parse_sms_xml()
+
