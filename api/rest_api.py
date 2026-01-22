@@ -10,7 +10,7 @@ class APIHandler(BaseHTTPRequestHandler):
         authentication_header = self.headers.get('Authorization')
         if not authentication_header:
             return False
-        encoder = authentication_header.split('')[1]
+        encoder = authentication_header.split(' ')[1]
         decoder = base64.b64decode(encoder).decode('utf-8')
         return decoder == "team5:ALU2025"
     def do_GET(self):
