@@ -66,7 +66,7 @@ CREATE TABLE transactions (
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
   COMMENT 'Main mobile money transaction records from SMS parsing';
 
--- =============================================================================
+
 -- LABELS (tags / classifications)
 
 CREATE TABLE labels (
