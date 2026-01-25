@@ -68,7 +68,7 @@ CREATE TABLE transactions (
 
 -- =============================================================================
 -- LABELS (tags / classifications)
--- =============================================================================
+
 CREATE TABLE labels (
     label_id    INT AUTO_INCREMENT PRIMARY KEY,
     label_name  VARCHAR(80) NOT NULL UNIQUE COMMENT 'e.g. Fraud Risk, High Value, Reversal, Normal',
