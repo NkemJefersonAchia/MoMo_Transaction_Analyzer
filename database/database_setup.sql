@@ -93,7 +93,7 @@ CREATE TABLE transaction_labels (
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
   COMMENT 'Many-to-many assignment of labels to transactions';
 
--- =============================================================================
+
 -- SYSTEM LOGS
 
 CREATE TABLE system_logs (
