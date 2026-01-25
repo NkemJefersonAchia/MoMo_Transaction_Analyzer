@@ -112,9 +112,8 @@ CREATE TABLE system_logs (
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
   COMMENT 'System logs for SMS parsing, errors and processing audit';
 
--- =============================================================================
+
 -- SAMPLE DATA (≥5 records per main table)
--- =============================================================================
 
 -- Users (7 records)
 INSERT INTO users (phone_number, full_name) VALUES
