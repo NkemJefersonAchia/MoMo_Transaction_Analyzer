@@ -37,9 +37,9 @@ CREATE TABLE categories (
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
   COMMENT 'Classification of mobile money transaction types';
 
--- =============================================================================
+
 -- TRANSACTIONS (core records)
--- =============================================================================
+
 CREATE TABLE transactions (
     transaction_id INT AUTO_INCREMENT PRIMARY KEY,
     tx_ref         VARCHAR(64)      NOT NULL UNIQUE COMMENT 'MoMo provider reference / message ID',
