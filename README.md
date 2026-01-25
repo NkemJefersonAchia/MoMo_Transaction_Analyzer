@@ -38,6 +38,7 @@ The database schema was designed and implemented in MySQL based on the ERD.
 - Column comments for documentation
 
 **File Location:** `/database/database_setup.sql`
+- Screenshots added as PDF for detailed viewing.
 
 **Testing:**
 - Basic CRUD operations were executed successfully (SELECT with joins, UPDATE description, DELETE label associations).
