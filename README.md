@@ -36,6 +36,8 @@ The database schema was designed and implemented in MySQL based on the ERD.
 - CHECK constraints (e.g. amount >= 0)
 - Sample test data (6+ records per main table)
 - Column comments for documentation
+### Deliverables
+- [Database Design Document (PDF)](https://docs.google.com/document/d/1PEBOlbYcsqs00nmUNxs5a8szmYctwi9SroUnqs8MQZI/edit?usp=sharing)
 
 **File Location:** `/database/database_setup.sql`
 - Screenshots added as PDF for detailed viewing.
