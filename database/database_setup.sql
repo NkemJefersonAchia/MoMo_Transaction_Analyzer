@@ -25,9 +25,8 @@ CREATE TABLE users (
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
   COMMENT 'MoMo users involved in sending or receiving funds';
 
--- =============================================================================
 -- CATEGORIES (transaction types)
--- =============================================================================
+
 CREATE TABLE categories (
     category_id INT AUTO_INCREMENT PRIMARY KEY,
     name        VARCHAR(80) NOT NULL UNIQUE COMMENT 'e.g. Airtime Top-up, P2P Transfer, Bill Payment',
