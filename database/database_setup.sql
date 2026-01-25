@@ -94,8 +94,8 @@ CREATE TABLE transaction_labels (
   COMMENT 'Many-to-many assignment of labels to transactions';
 
 -- =============================================================================
--- SYSTEM_LOGS (processing / audit trail)
--- =============================================================================
+-- SYSTEM LOGS
+
 CREATE TABLE system_logs (
     log_id         INT AUTO_INCREMENT PRIMARY KEY,
     tx_ref         VARCHAR(64) NULL COMMENT 'References transactions.tx_ref (may be NULL if parse failed)',
