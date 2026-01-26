@@ -17,6 +17,7 @@ A full-stack application that processes Mobile Money SMS transactions, stores th
 
 ---
 
+
 ## Assignment 1: XML Parser & RESTful API
 
 ### Features Implemented
@@ -96,6 +97,19 @@ python database/run_database_setup.py
 ### Testing
 - Basic CRUD operations executed successfully (SELECT with joins, UPDATE description, DELETE label associations)
 - Screenshots included in documentation
+
+
+### Data Serialization
+
+The following table demonstrates the mapping between SQL database schema and JSON API responses, illustrating serialization understanding:
+
+| SQL Table | SQL Column | JSON Key | Data Type | Implementation Note |
+|-----------|-----------|----------|-----------|-------------------|
+| Transactions | txn_id | transaction_id | Integer | Direct mapping of Primary Key |
+| Transactions | ext_ref | external_id | String | MoMo unique reference string |
+| Users | full_name | sender.name | Object/String | Nested via FK Join on sender_id |
+| Categories | cat_name | category.name | Object/String | Nested via FK Join on category_id |
+| Transactions | txn_date | date | String | Formatted to ISO 8601 for API |
 
 ---
 
