@@ -17,7 +17,12 @@ A full-stack application that processes Mobile Money SMS transactions, stores th
 
 ---
 
+<<<<<<< HEAD
 ## Assignment 1: XML Parser & RESTful API
+=======
+## Team Tasksheet
+**Link:** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
+>>>>>>> 086dc5b454a042e7b39c94abe6328963d5699f1a
 
 ### Features Implemented
 1. **XML to JSON Parser:** Automatically converts `modified_sms_v2.xml` into a usable JSON database.
