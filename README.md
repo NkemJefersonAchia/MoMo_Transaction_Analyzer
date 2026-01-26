@@ -19,7 +19,8 @@ stores them in a database, and visualizes spending patterns.
 https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
 
 ## Team Tasksheet
-- **This is the link to the tasksheet** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
+- **This is the link to the tasksheet**
+- https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
 
 ## Features Implemented
 1. **XML to JSON Parser:** Automatically converts `modified_sms_v2.xml` into a usable JSON database.
