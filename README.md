@@ -12,15 +12,14 @@ stores them in a database, and visualizes spending patterns.
 
 ## Link to our Trello Scrum Board
 
-Link: https://trello.com/invite/b/6962aee2b234ced12549c24c/ATTIf1d0632ffd45321b8642afce072cc62274550814/team-5
+**Link:** https://trello.com/invite/b/6962aee2b234ced12549c24c/ATTIf1d0632ffd45321b8642afce072cc62274550814/team-5
 
 ## Link to our Miro Diagram
  
-Link: https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
+https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
 
 ## Team Tasksheet
 - **This is the link to the worksheet** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
-
 
 ## Features Implemented
 1. **XML to JSON Parser:** Automatically converts `modified_sms_v2.xml` into a usable JSON database.
@@ -70,3 +69,6 @@ The database schema was designed and implemented in MySQL based on the ERD.
 6. Access via Postman at `http://localhost:8000/transactions`.
 
 
+## Documentation
+
+All project documentation, including the AI usage log and other project documents, can be found in the `docs/` folder.
