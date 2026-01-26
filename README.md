@@ -106,10 +106,13 @@ The following table demonstrates the mapping between SQL database schema and JSO
 | SQL Table | SQL Column | JSON Key | Data Type | Implementation Note |
 |-----------|-----------|----------|-----------|-------------------|
 | Transactions | txn_id | transaction_id | Integer | Direct mapping of Primary Key |
-| Transactions | ext_ref | external_id | String | MoMo unique reference string |
+| Transactions | tx_ref | external_id | VARCHAR/String | MoMo unique reference identifier |
+| Transactions | post_balance | financial_details.new_balance | DECIMAL/Number | Nested in financial details object |
+| Transactions | fee | financial_details.fee | DECIMAL/Number | Nested in financial details object |
+| Transactions | timestamp | date | DATETIME/String | Formatted to ISO 8601 for API |
 | Users | full_name | sender.name | Object/String | Nested via FK Join on sender_id |
 | Categories | cat_name | category.name | Object/String | Nested via FK Join on category_id |
-| Transactions | txn_date | date | String | Formatted to ISO 8601 for API |
+
 
 ---
 
