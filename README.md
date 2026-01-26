@@ -63,6 +63,5 @@ The database schema was designed and implemented in MySQL based on the ERD.
 3. Run `python api/rest_api.py`.
 4. Access via Postman at `http://localhost:8000/transactions`.
 
-## Team Worksheet
-- **This is the link to the worksheet** `https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0`
-
+## Team Tasksheet
+- **This is the link to the worksheet** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
