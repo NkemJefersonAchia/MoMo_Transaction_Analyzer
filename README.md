@@ -18,6 +18,10 @@ Link: https://trello.com/invite/b/6962aee2b234ced12549c24c/ATTIf1d0632ffd45321b8
  
 Link: https://miro.com/app/board/uXjVGUdVhZI=/?share_link_id=83189650634
 
+## Team Tasksheet
+- **This is the link to the worksheet** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
+
+
 ## Features Implemented
 1. **XML to JSON Parser:** Automatically converts `modified_sms_v2.xml` into a usable JSON database.
 2. **RESTful API:** Built using Python's `http.server`, supporting GET, POST, PUT, and DELETE.
@@ -60,8 +64,9 @@ The database schema was designed and implemented in MySQL based on the ERD.
 ## Setup
 1. Place `modified_sms_v2.xml` in the `dsa/` folder.
 2. Run `python dsa/parser_script.py`.
-3. Run `python api/rest_api.py`.
-4. Access via Postman at `http://localhost:8000/transactions`.
+3. Set up a MySQL database connection using your MySQL credentials.
+4. Run the SQL setup script: `python -m mysql.connector` or execute `database/database_setup.sql` via MySQL CLI.
+5. Run `python api/rest_api.py`.
+6. Access via Postman at `http://localhost:8000/transactions`.
 
-## Team Tasksheet
-- **This is the link to the worksheet** https://docs.google.com/spreadsheets/d/12QK9rFzr45NwA9IXL3wIgM60ONJPslisKoZHr04at5s/edit?gid=0#gid=0
+
