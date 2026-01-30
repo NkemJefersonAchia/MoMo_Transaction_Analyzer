@@ -7,8 +7,7 @@ A full-stack application that processes Mobile Money SMS transactions, stores th
 ## Team Members
 - Nkem Jeferson Achia
 - Muhammed Awwal Achuja
-- Philbert Kuria
-
+- Thiery Rugira
 ## Project Resources
 
 - **Trello Scrum Board:** https://trello.com/invite/b/6962aee2b234ced12549c24c/ATTIf1d0632ffd45321b8642afce072cc62274550814/team-5
