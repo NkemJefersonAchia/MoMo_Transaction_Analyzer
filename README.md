@@ -119,3 +119,5 @@ The following table demonstrates the mapping between SQL database schema and JSO
 ## Documentation
 
 All project documentation, including the AI usage log and other project documents, can be found in the `docs/` folder.
+
+## TEAM 5: Enterprise Web Development 
